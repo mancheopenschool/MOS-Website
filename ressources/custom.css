@@ -430,7 +430,7 @@ section{
     padding: 0 0 5px 0;
     display: block;
 }
-.footer a {
+.footer a, .footer-bottom a{
     color: white;
 }
 .footer-bottom {
@@ -596,6 +596,7 @@ section{
     border: solid 2px white;
     color: white;
     position: absolute;
+    position: absolute;
     right: 60px;
     bottom: 15px;
     box-shadow: 0 2px 5px 0 #656565;
@@ -637,6 +638,43 @@ section{
 .alert-succes{
     background-color: #2ecc71;
 }
+
+/*
+=============================
+            MODAL
+=============================
+*/
+
+#modalCopyright{
+    text-align: center;
+}
+
+#modalCopyright img{
+    height: 50px;
+    width: auto;
+    border-radius: 100%;
+    margin: 5px 0 5px;
+}
+#modalCopyright h3{
+    font-family: 'Gloria Hallelujah', sans-serif;;
+    font-size: 35px;
+    color: #0098d3;
+    border-bottom: solid 2px #0098d3;
+    border-top: solid 2px #0098D3;
+}
+#modalCopyright p{
+    font-family: 'Gloria Hallelujah', sans-serif;
+    font-size: 15px;
+}
+#modalCopyright .modal-body{
+    padding-bottom: 0;
+}
+#modalCopyright .modalFooter-titre{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 5px;
+}
+
 
 /*
 =============================
@@ -776,7 +814,7 @@ section{
     padding-top: 30vh;
 }
 #progevo .row:first-child{
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 #projects .row:first-child{
     padding-top: 15vh;
