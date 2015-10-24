@@ -489,30 +489,162 @@
 
             <div class="col-md-6">
                 <h2>Contact</h2>
-                    <form class="contact-form text-center" action="" method="post">
-                        <fieldset>
-                            <div class="field-group">
-                                <select name="objet" class="form-control field">
-                                    <option value="question" >Question</option>
-                                    <option value="inscription" >Inscription</option>
-                                    <option value="partenaire" >Partenariat</option>
-                                </select>
-                            </div>
-                            <div class="field-group">
-                                <input name="nom" type="text" value="" class="form-control field" placeholder="NOM Prénom" />
-                            </div>
-                            <div class="field-group">
-                                <input name="email" type="email" value="" class="form-control field" placeholder="Adresse mail"/>
-                            </div>
-                            <div class="field-group">
-                                <input name="numero" type="tel" value="" class="form-control field" placeholder="Numéro de Téléphone"/>
-                            </div>
-                            <div class="field-group">
-                                <textarea name="message" class="form-control field" rows="3" placeholder="Votre text ici"></textarea>
-                            </div>
-                        </fieldset>
-                        <input class="btn btn-lg" name="envoi" id="envoi" type="submit">
-                    </form>
+<?php
+$destinataire = 'contact@valentin-deville.eu';
+$copie = 'oui'; // copie ? (envoie une copie au visiteur)
+
+// Messages de confirmation du form
+$message_envoye = "Votre message nous à bien été transmis !";
+$message_non_envoye = "L'envoi du mail a échoué, veuillez réessayer SVP.";
+$message_formulaire_invalide = "Vérifiez que tous les champs soient bien remplis et que l'email soit sans erreur.";
+
+// cette fonction sert à nettoyer et enregistrer un texte
+function Rec($text)
+{
+    $text = htmlspecialchars(trim($text), ENT_QUOTES);
+    if (1 === get_magic_quotes_gpc()) {
+        $text = stripslashes($text);
+    }
+
+    $text = nl2br($text);
+    return $text;
+}
+
+// Cette fonction sert à vérifier la syntaxe d'un email
+function IsEmail($email)
+{
+    $value = preg_match('/^(?:[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+\.)*[\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+@(?:(?:(?:[a-zA-Z0-9_](?:[a-zA-Z0-9_\-](?!\.)){0,61}[a-zA-Z0-9_-]?\.)+[a-zA-Z0-9_](?:[a-zA-Z0-9_\-](?!$)){0,61}[a-zA-Z0-9_]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/', $email);
+    return (($value === 0) || ($value === false)) ? false : true;
+}
+
+// formulaire envoyé, on récupère tous les champs.
+$nom = (isset($_POST['nom'])) ? Rec($_POST['nom']) : '';
+$email = (isset($_POST['email'])) ? Rec($_POST['email']) : '';
+$objet = (isset($_POST['objet'])) ? Rec($_POST['objet']) : '';
+$numero = (isset($_POST['numero'])) ? Rec($_POST['numero']) : '';
+$message = (isset($_POST['message'])) ? Rec($_POST['message']) : '';
+
+// On va vérifier les variables et l'email ...
+$email = (IsEmail($email)) ? $email : ''; // soit l'email est vide si erroné, soit il vaut l'email entré
+$err_formulaire = false; // sert pour remplir le formulaire en cas d'erreur si besoin
+
+if (isset($_POST['envoi'])) {
+    if (($nom != '') && ($email != '') && ($objet != '') && ($message != '') && ($numero != '')) {
+        // les variables sont remplies, on génère puis envoie le mail
+
+        $headers .= 'From:' . $nom . ' <' . $email . '>' . "\r\n";
+                $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+
+
+                if($objet){
+                if($objet === "question"){
+                $objet = "Question";
+                }
+                elseif($objet === "inscription"){
+                $objet = "Inscription";
+                }
+                elseif($objet === "partenaire"){
+                $objet = "Partenariat";
+                }
+                else{
+                $objet = "Autre";
+                }
+                }
+
+
+                // envoyer une copie au visiteur ?
+                if ($copie == 'oui') {
+
+                ob_start();
+                include "ressources/templates/email-bienrecu.php";
+                $bienrecu = ob_get_clean();
+                $bienrecu = utf8_encode($bienrecu);
+                $headers2 = 'From: MancheOpenSchool <contact@valentin-deville.eu>' . "\r\n";
+                $headers2 .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                mail($nom. '<' .$email. '>', $objet, utf8_decode($bienrecu), $headers2);
+                }
+                $cible = $destinataire;
+
+                // Remplacement de certains caractères spéciaux
+                $message = str_replace("&#039;", "'", $message);
+                $message = str_replace("&#8217;", "'", $message);
+                $message = str_replace("&quot;", '"', $message);
+                $message = str_replace('&lt;br&gt;', '', $message);
+                $message = str_replace('&lt;br /&gt;', '', $message);
+                $message = str_replace("&lt;", "&lt;", $message);
+                $message = str_replace("&gt;", "&gt;", $message);
+                $message = str_replace("&amp;", "&", $message);
+
+                //Ferme les yeux ça pique
+                $infoclient =  '
+                <html>
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+                    <style>
+                        body{
+                            font-family: Arial, helvetica, sans-serif;
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                    </style>
+                </head>
+                <body>'
+                . '<p><strong>Nom: </strong>' . $nom . '</p>'
+                . '<p><strong>Email: </strong>' . $email . '</p>'
+                . '<p><strong>Objet: </strong>' . $objet . '</p>'
+                . '<p><strong>Numéro: </strong>' . $numero . '</p><br /><p>';
+
+                    $contenumail = $infoclient . $message . '</p></body></html>';
+                $contenumail = utf8_encode($contenumail);
+
+                // Envoi du mail
+                if (mail($cible, $objet, utf8_decode($contenumail), $headers)) {
+                $alertFormSucces = $message_envoye;
+                } else {
+                $alertForm = $message_non_envoye;
+                }
+                } else {
+                // une des 3 variables (ou plus) est vide ...
+                $alertForm = $message_formulaire_invalide;
+                $err_formulaire = true;
+                }
+                } // fin du if (!isset($_POST['envoi']))
+
+                // Tu peut r'ouvrir les yeux
+                ?>
+                <?php
+                    if ($alertFormSucces) {
+                        $objet = "";
+                        $nom = "";
+                        $email = "";
+                        $numero = "";
+                        $message = "";
+                    }
+                ?>
+                <form class="contact-form text-center" action="#contactfaq" method="post">
+                    <fieldset>
+                        <div class="field-group">
+                            <select name="objet" class="form-control field">
+                                <option value="question" <?php if(stripslashes($objet) === "question"){ echo "selected";}?>>Question</option>
+                                <option disabled value="inscription" <?php if(stripslashes($objet) === "inscription"){ echo "selected";}?>>Inscription</option>
+                                <option value="partenaire" <?php if(stripslashes($objet) === "partenaire"){ echo "selected";}?>>Partenariat</option>
+                            </select>
+                        </div>
+                        <div class="field-group">
+                            <input name="nom" type="text" value="<?php echo stripslashes($nom);?>" class="form-control field" placeholder="NOM Prénom" />
+                        </div>
+                        <div class="field-group">
+                            <input name="email" type="email" value="<?php echo stripslashes($email) ?>" class="form-control field" placeholder="Adresse mail"/>
+                        </div>
+                        <div class="field-group">
+                            <input name="numero" type="tel" value="<?php echo stripslashes($numero) ?>" class="form-control field" placeholder="Numéro de Téléphone"/>
+                        </div>
+                        <div class="field-group">
+                            <textarea name="message" class="form-control field" rows="3" placeholder="Votre text ici"><?php echo stripslashes($message) ?></textarea>
+                        </div>
+                    </fieldset>
+                    <input class="btn btn-lg" name="envoi" id="envoi" type="submit" value="Envoyer">
+                </form>
             </div>
         </div>
     </div>
@@ -784,6 +916,19 @@
         </div>
     </div>
 </div>
+<?php if($alertForm){
+    ?>
+    <p class="alert alert-danger alert-dismissible alertForm"><?php echo $alertForm ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button></p>
+<?php }; ?>
+
+<?php if($alertFormSucces){
+    ?>
+    <p class="alert alert-succes alert-dismissible alertForm"><?php echo $alertFormSucces ?>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button></p>
+<?php }; ?>
 
 <script src="ressources/app/bootstrap/js/jquery.min.js"></script>
 <script src="ressources/app/bootstrap/js/bootstrap.min.js"></script>
