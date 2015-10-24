@@ -69,10 +69,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>
-                            Les formations dans le secteur <b>numérique</b> présentent sur le territoire, pour la plupart,
-                            ne couvrent pas les <b>réels besoins du marché</b>. Ce n'est pas le cas
-                            de la <b>Manche Open School</b>.
-
+                            Les formations dans le secteur <b>numérique</b> présentes sur le territoire, pour la
+                            plupart, ne couvrent pas les <b>réels besoins du marché</b>. La <b>Manche Open School</b>
+                            , elle, offre une formation complète et adaptée.
                         </p>
                     </div>
                 </div>
@@ -87,9 +86,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>
-                            La <b>Manche Open School</b> accompagne au maximum les apprenants.
-                            Les personnes formées, partent dans d’autres régions, ou suivent une formation
-                            intra-entreprise avant d’entrer en production.
+                            La <b>Manche</b> Open School accompagne au maximum les apprenants. Les personnes
+                            formées partent suivre une <b>formation intra-entreprise</b> avant d’entrer en production.
                         </p>
                     </div>
                 </div>
@@ -104,9 +102,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>
-                            Vous pourrez créer votre entreprise ou avoir autant de responsabilité en entreprise.
-                            La <b>Manche Open School</b> à pour but de former des profils de responsables
-                            numériques en leur transmettant les compétences techniques nécessaires..
+                            Vous pourrez obtenir des postes à <b>responsabilité</b> dans les entreprises existantes,
+                            ou même créer la vôtre. La <b>Manche Open School</b> a pour but de former des profils de
+                            responsables numériques en leur transmettant les compétences techniques nécessaires.
                         </p>
                     </div>
                 </div>
@@ -121,10 +119,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p>
-                            L'open est notre devise, aucune connaissance, aucun diplôme requis pour rejoindre
-                            la <b>Manche Open School</b>.
-                            Comme aux habithudes de la formation tout est ouvert, la motivation et la passion
-                            fera la différence, à vous de jouer !
+                            L'Open est notre devise, <b>aucune connaissance</b>, <b>aucun diplôme</b> n'est requis
+                            pour rejoindre la <b>Manche Open School</b>. Ce principe s'applique à notre formation
+                            : tout  est ouvert, la motivation et la passion feront la différence. A vous de jouer !
                         </p>
                     </div>
                 </div>
@@ -135,7 +132,7 @@
                 <div class="col-md-12">
                     <br />
                     <p class="alert alert-danger alert-warning alert-dismissible">
-                        Les inscriptions sont fermés pour le moment
+                        Les inscriptions sont fermées pour le moment.
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <i aria-hidden="true" class="glyphicon glyphicon-remove"></i>
                         </button>
@@ -389,15 +386,127 @@
         <div class="row">
             <div class="col-md-6">
                 <h3>En cours:</h3>
+                <br />
+                <div class="row">
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
                 <h3>Effectués:</h3>
+                <br />
+                <div class="row">
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                    <div class="col-md-6 nobg">
+                        <h4>Octobre 2015</h4>
+                        <p>
+                            CRNG  (<a href="www.crng.fr" target="_blank">www.crng.fr</a>)
+                            Refonte complète du site du Centre Régional de Nautisme de Granville:
+                            Contenu, fonctionnalités et design.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!--
     <div id="iframe-map">
         <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-1.5661686658859253%2C48.84104243356455%2C-1.5634864568710327%2C48.84242640706677&amp;layer=mapnik" style="border: 2px solid black"></iframe>
     </div>
+     -->
 </section>
 <section id="contactfaq">
     <div class="container-fluid">
@@ -441,7 +550,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading collapsed" role="tab" data-toggle="collapse" data-target="#FAQ3" data-parent="#accordion">
                             <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" >
-                                Quels sont les horraires ?
+                                Quels sont les horaires ?
                             </h4>
                             <span class="glyphicon glyphicon-chevron-down icon-arrow-down"></span>
                         </div>
@@ -463,9 +572,9 @@
                         <div id="FAQ4" class="collapse">
                             <p>
                                 La formation n’est pas reconnue par l’état comme un titre. C’est une <b>formation « employante »</b>,
-                                basée sur les besoins opérationnels du marché. Vos stages seront la meilleure façon de faire preuve
-                                de vos savoirs faire auprès des entreprises partenaires. Des certificats de validation vous seront
-                                remis à la fin de la formation si votre niveau est suffisant.
+                                basée sur les besoins opérationnels du marché. Vos stages seront la meilleure façon de faire
+                                preuve de vos savoir-faire auprès des entreprises partenaires. Des certificats de validation
+                                vous seront remis à la fin de la formation si votre niveau est suffisant.
                             </p>
                         </div>
                     </div>
