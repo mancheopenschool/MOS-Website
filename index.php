@@ -4,7 +4,26 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MOS</title>
+
+    <title>La Manche Open School</title>
+
+    <meta name="description" content="Ici faudra une desc." />
+    <meta name="keywords" content="formation, adulte, gratuite, informatique, manche, normandie, france, grande, ecole,
+    numerique, diplome, entreprise, alternance, code, dev" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="MyTheValentinus" />
+    <meta name="twitter:image:src" content="http://www.mancheopenschool.fr/ressources/images/preview.png" />
+    <meta name="twitter:site" content="@50_Open_School" />
+    <meta name="twitter:title" content="La Manche Open School" />
+    <meta name="twitter:description" content="Ici faudra une desc" />
+    <meta name="twitter:image" content="http://www.mancheopenschool.fr/ressources/images/preview.png" />
+    <meta name="twitter:url" content="http://www.mancheopenschool.fr" />
+
+    <meta property="og:title" content="La Manche Open School" />
+    <meta property="og:description" content="Ici faudra une desc" />
+    <meta property="og:image" content="http://www.mancheopenschool.fr/ressources/images/preview.png" /></head>
+
     <link href="ressources/app/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="ressources/app/font-awesome-4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="ressources/custom.css">
