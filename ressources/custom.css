@@ -113,7 +113,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("./images/1.JPG");
+    background-image: url("./images/6.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -193,7 +193,7 @@ section{
 
 /*
 =============================
-         PROEJCTS
+         PROJECTS
 =============================
 */
 
@@ -207,7 +207,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("./images/2.JPG");
+    background-image: url("./images/4.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,7 +340,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("./images/2.JPG");
+    background-image: url("./images/6.JPG");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -604,7 +604,6 @@ section{
     border: solid 2px white;
     color: white;
     position: absolute;
-    position: absolute;
     right: 60px;
     bottom: 15px;
     box-shadow: 0 2px 5px 0 #656565;
@@ -800,6 +799,17 @@ section{
     bottom: 0;
 }
 
+#events-slider .carousel-caption{
+    position: static;
+    color: inherit;
+    text-shadow: none;
+}
+#events-slider .carousel-inner{
+    z-index: 2;
+}
+#events-slider .carousel-control{
+    z-index: 3;
+}
 /*
 =============================
          ALERT FORM
@@ -813,7 +823,29 @@ section{
     z-index: 3;
 }
 
+/*
+=============================
+       BUTTON GO HEAD
+=============================
+*/
+#gohead{
+    background-color: rgba(0,0,0,0.4);
+    border: solid 2px white;
+    color: white;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    box-shadow: 0 2px 5px 0 #656565;
+    z-index: 3;
 
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 4px 0;
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 20px;
+}
 /*
 =============================
     SETTINGS FOR SECTION
@@ -839,5 +871,6 @@ section{
     padding-top: 10vh;
 }
 #projects .row:first-child{
+    padding-top: 20vh;
     padding-bottom: 10vh;
 }

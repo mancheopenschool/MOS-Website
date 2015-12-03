@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     /* activate scrollspy menu */
     $('body').scrollspy({
-        target: '#bs-example-navbar-collapse-1',
+        target: '#mos-navbar',
         offset: 50
     });
 
@@ -24,9 +24,29 @@ $(document).ready(function () {
         }
     });
 
+    $('#gohead').hide().click(function(){
+        $('html,body').animate({
+                scrollTop: $('#header').offset().top
+            },'slow'
+        );
+    });
+
+
+
+    $(document).scroll(function(){
+        var scrollTop = $(document).scrollTop();
+        if (scrollTop > 75)
+            $('#gohead').fadeIn( "slow");
+        else{
+            $('#gohead').fadeOut( "slow");
+        }
+    });
+
+    $('#events-slider').carousel(); //Enable events slider.
 
 });
 
 $('.navbar-collapse a').click(function () {
     $(".navbar-collapse").collapse('hide');
 });
+

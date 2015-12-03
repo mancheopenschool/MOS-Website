@@ -7,7 +7,7 @@ var images = [];
 images[0] = "ressources/images/1.JPG";
 images[1] = "ressources/images/2.JPG";
 images[2] = "ressources/images/3.JPG";
-images[3] = "ressources/images/4.JPG";
+images[3] = "ressources/images/7.JPG";
 
 var i = 0;
 var BGChangeur = setInterval(fadeBGChangeur, tempsEntreChangement);
@@ -26,6 +26,7 @@ function fadeBGChangeur() {
     }
 }
 function startBG(){
+    clearInterval(BGChangeur);
     BGChangeur = setInterval(fadeBGChangeur, tempsEntreChangement);
 }
 function stopBG(){
