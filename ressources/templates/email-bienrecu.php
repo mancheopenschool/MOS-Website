@@ -165,9 +165,8 @@
                     <tr>
                         <td>
                             <p>Bonjour <?php echo $nom; ?>,</p>
-                            <p>Votre demande sur notre site a bien été pris en compte et sera traité le plus rapidement possible.</p>
-                            <p>Nous vous invitons à bien vouloir ajouter notre adresse mail à votre carnet d'adresse pour éviter de louper les mails de
-                                notre part.</p>
+                            <p>Votre demande a bien été prise en compte et sera traitée le plus rapidement possible.</p>
+                            <p>Nous vous invitons à ajouter notre adresse mail à votre carnet d'adresse pour faciliter les réponses ultérieures.</p>
                             <h3>Récapitulatif de votre message:</h3>
                             <p>
                                 <?php
@@ -181,7 +180,7 @@
                             <table class="btn-primary" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                     <td>
-                                        <a href="http://mancheopenschool.fr" target="_blank">Retourner sur le site</a>
+                                        <a href="http://www.mancheopenschool.fr" target="_blank">Retourner sur le site</a>
                                     </td>
                                 </tr>
                             </table>

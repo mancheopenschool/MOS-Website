@@ -306,29 +306,29 @@
                                 </ul>
                                 <ul class="event-list">
                                     <li>
-                                        <time datetime="0000-00-00 0000">
-                                            <span class="day">X</span>
-                                            <span class="month">-</span>
+                                        <time datetime="2015-11-04 0000">
+                                            <span class="day">4</span>
+                                            <span class="month">Sept</span>
                                             <span class="year">2015</span>
                                         </time>
                                         <div class="info">
-                                            <h2 class="title">Soon !</h2>
+                                            <h2 class="title">Intervention d'Olivier COCHARD - Orange France</h2>
 
-                                            <p class="desc">This event is not planified, soon on your screen !</p>
+                                            <p class="desc">Discussion autour du métier d'administrateur réseau et TP découverte de BSD Router.</p>
                                         </div>
                                     </li>
                                 </ul>
                                 <ul class="event-list">
                                     <li>
-                                        <time datetime="0000-00-00 0000">
-                                            <span class="day">X</span>
-                                            <span class="month">-</span>
+                                        <time datetime="2015-11-23 0000">
+                                            <span class="day">23</span>
+                                            <span class="month">Nov</span>
                                             <span class="year">2015</span>
                                         </time>
                                         <div class="info">
-                                            <h2 class="title">Soon !</h2>
+                                            <h2 class="title">Intervention de Pierre LEMEE - Blablacar France</h2>
 
-                                            <p class="desc">This event is not planified, soon on your screen !</p>
+                                            <p class="desc">Discussion autour d'une infrastructure de haut niveau.</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -345,7 +345,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
-                    <h2 class="text-center">Le programme:</h2>
+                    <h2 class="text-center">Le programme :</h2>
 
                     <p class="text-justify">
                         Programme de la Manche Open School<br/>
@@ -383,7 +383,7 @@
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <h2 class="text-center">Notre évolution:</h2>
+                    <h2 class="text-center">Notre évolution :</h2>
 
                     <div class="progress-bg">
                         <div class="progress">
@@ -647,7 +647,7 @@
 
                     $captcha = $_POST['g-recaptcha-response'];
                     // Change your secret key in next variable.
-                    $responseGoogle = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=XXXXXX&response=$captcha&remoteip=" . $_SERVER['REMOTE_ADDR']));
+                    $responseGoogle = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=XXXXXXXXXXXXXXXXXXXXX&response=$captcha&remoteip=" . $_SERVER['REMOTE_ADDR']));
 
                     if (($nom !== '') && ($email != '') && ($objet != '') && ($message != '') && ($numero != '') && $responseGoogle->success) {
                         // les variables sont remplies, on génère puis envoie le mail
@@ -791,7 +791,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 nopaddingmargin">
-                <h2>Ils nous font confiance:</h2>
+                <h2>Ils nous font confiance :</h2>
                 <marquee onmouseover="this.stop();" onmouseout="this.start();">
                     <a href="http://conseil-departemental.manche.fr/" target="_blank"><img
                             src="https://www.data.gouv.fr/s/avatars/b6/b4e38218b24d998f090b4b990cda78.jpg"
