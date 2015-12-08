@@ -568,7 +568,7 @@
                         <div class="panel-heading collapsed" role="tab" data-toggle="collapse" data-target="#FAQ4"
                              data-parent="#accordion">
                             <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion">
-                                La formation est-elle certifiée ?
+                                La formation est-elle certifiante ?
                             </h4>
                             <span class="glyphicon glyphicon-chevron-down icon-arrow-down"></span>
                         </div>
@@ -647,7 +647,7 @@
 
                     $captcha = $_POST['g-recaptcha-response'];
                     // Change your secret key in next variable.
-                    $responseGoogle = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=XXXXXXXXXXXXXXXXXXXXX&response=$captcha&remoteip=" . $_SERVER['REMOTE_ADDR']));
+                    $responseGoogle = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=XXXXXXXXXXXXXXXXX&response=$captcha&remoteip=" . $_SERVER['REMOTE_ADDR']));
 
                     if (($nom !== '') && ($email != '') && ($objet != '') && ($message != '') && ($numero != '') && $responseGoogle->success) {
                         // les variables sont remplies, on génère puis envoie le mail
@@ -814,8 +814,6 @@
                     <a href="http://www.factorfx.com" target="_blank"><img
                             src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xal1/v/t1.0-1/p160x160/10347094_10155306305935424_4677172624109513315_n.png?oh=4c3a7ff0553fca1e0c1db99370274585&oe=56C96B78&__gda__=1455885258_50424bac27f0c56626c33dc3c091a1dd"
                             class="img-responsive"></a>
-                    <a href="https://openclassrooms.com/" target="_blank"><img
-                            src="http://www.easypartner.fr/uploads/png_1429791128.png" class="img-responsive"></a>
                     <a href="http://www.ocsinventory-ng.org/fr/" target="_blank"><img
                             src="http://www.ocsinventory-ng.org/fr/assets/components/modxss/images/logo.png"
                             class="img-responsive"></a>
@@ -833,8 +831,8 @@
                     FactorFX, quant à eux, font le lien entre l'école et ses futurs élèves.
                     Le site OpenClassrooms permet aux élèves d'avoir un support de cours en ligne, fourni par une
                     communauté d'experts et de passionnés de l'informatique.
-                    FactorFX, le Centre Hospitalier d'Avranches-Granville, Open Computers and Software Inventory
-                    Next Generation (OCS Inventory NG) et Asinfo ont fourni le matériel et les logiciels nécessaires
+                    FactorFX, le Centre Hospitalier d'Avranches-Granville et Open Computers and Software Inventory
+                    Next Generation (OCS Inventory NG) ont fourni le matériel et les logiciels nécessaires
                     au développement de l'école.
                 </p>
             </div>
